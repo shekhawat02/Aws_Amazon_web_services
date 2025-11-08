@@ -1,5 +1,11 @@
+# https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html
 sudo yum install -y amazon-efs-utils  #(ubuntu apt )
+# https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-helper-ec2-linux.html
 sudo mkdir efs
+
 cd efs
+
 sudo mount -t efs -o tls fs-abcd123456789ef0:/ efs/  
-# fs-abcd123456789ef0 this was the efs file id which you get when you launch a efs and click on attach option. 
+
+# fs-abcd123456789ef0 this was the efs file id which you get when you launch a efs and click on attach option.
+
